@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CORNELIU JONATHAN — Full Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Fraunces:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast">Message sent ✓</div>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="container">
+      <a href="#hero" class="nav-logo">corneliu<span>.dev</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">Available for hire</div>
+        <h1 class="hero-name">CORNELIU<br><em>JONATHAN</em></h1>
+        <div class="hero-role">
+          Software Engineer &amp; Frontend Developer, Backend Developer <span class="blink"></span>
+        </div>
+        <p class="hero-desc">
+          I build scalable, beautiful web applications that sit at the intersection
+          of engineering precision and design sensibility.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">About</div>
+      <h2 class="section-title">Crafting digital <em>summary</em></h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a <strong>final-year B.E. Electrical Engineering student</strong> who crossed
+          disciplines and never looked back. My electrical foundation gave me a systems mindset —
+          I think in signals, constraints, and efficiency. That same rigour now shapes how I write
+          backend code.</p>
+          <p>My current focus is <strong>backend development</strong> — building scalable, reliable
+          systems using <strong>Python, Django, and SQL</strong>. I approach learning the way
+          engineers approach circuits: structured, methodical, and always testing assumptions along
+          the way.</p>
+          <p>I'm disciplined, a fast learner, and driven by a genuine desire to solve hard problems.
+          I'm actively looking for a <strong>backend developer role</strong> where I can contribute
+          meaningfully and grow alongside a strong team.</p>
+          <div class="about-stats">
+            <div class="stat"><div class="stat-num">2</div><div class="stat-label">Disciplines</div></div>
+            <div class="stat"><div class="stat-num">BE</div><div class="stat-label">Elect. Engg.</div></div>
+            <div class="stat"><div class="stat-num">∞</div><div class="stat-label">Curiosity</div></div>
+            <div class="stat"><div class="stat-num">↑</div><div class="stat-label">Open to Work</div></div>
+          </div>
+        </div>
+        <div class="about-image-wrap reveal" style="transition-delay:0.15s">
+          <div class="about-photo">
+            <div class="about-photo-inner">
+              <span class="avatar-art">AC</span>
+            </div>
+          </div>
+          <div class="about-tag">Open to Work</div>
+          <div class="about-photo-caption">Chennai, Tamil Nadu — Open to Remote &amp; On-site Roles</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label">Skills</div>
+      <h2 class="section-title">Tools &amp; <em>Technologies</em></h2>
+      <div class="skills-grid">
+        <div class="skill-category reveal" data-index="01">
+          <div class="skill-icon">⚡</div>
+          <div class="skill-cat-title">Frontend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span><span class="skill-tag">Next.js</span>
+            <span class="skill-tag">TypeScript</span><span class="skill-tag">Vue 3</span>
+            <span class="skill-tag">Tailwind CSS</span><span class="skill-tag">Framer Motion</span>
+          </div>
+        </div>
+         <div class="skill-category reveal" data-index="02" style="transition-delay:0.1s">
+          <div class="skill-icon">🔧</div>
+          <div class="skill-cat-title">Backend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span><span class="skill-tag">Django</span>
+            <span class="skill-tag">Node.js</span><span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">FastAPI</span><span class="skill-tag">GraphQL</span>
+          </div>
+        </div>
+        <div class="skill-category reveal" data-index="03" style="transition-delay:0.2s">
+          <div class="skill-icon">🗄️</div>
+          <div class="skill-cat-title">Data &amp; Cloud</div>
+          <div class="skill-tags">
+            <span class="skill-tag">SQL</span><span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span><span class="skill-tag">Redis</span>
+            <span class="skill-tag">AWS</span><span class="skill-tag">Docker</span>
+          </div>
+        </div>
+        <div class="skill-category reveal" data-index="04" style="transition-delay:0.3s">
+          <div class="skill-icon">🛠️</div>
+          <div class="skill-cat-title">Tooling &amp; Practices</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span><span class="skill-tag">Data Structures</span>
+            <span class="skill-tag">Linux</span><span class="skill-tag">Agile / Scrum</span>
+            <span class="skill-tag">Figma</span><span class="skill-tag">CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">Selected <em>Work</em></h2>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="embedded">Embedded</button>
+        <button class="filter-btn" data-filter="iot">IoT</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 01 — Featured -->
+        <div class="project-card featured reveal visible" data-cat="embedded">
+          <div class="project-content">
+            <div class="project-num">01 — Featured</div>
+            <div class="project-card-header">
+              <div class="project-title">SWIPT — Simultaneous Wireless Power &amp; Information Transfer</div>
+              <span class="project-arrow">↗</span>
+            </div>
+            <p class="project-desc">
+              Designed and implemented a two-way wireless communication system over an inductive
+              power link using Amplitude Shift Keying (ASK) and Load Shift Keying (LSK) modulation.
+              The system delivers uninterrupted power transfer alongside a full-duplex data channel —
+              enabling low-power IoT and embedded applications that need both energy and data over
+              a single coupled-inductance interface.
+            </p>
+            <div class="project-stack">
+              <span>Embedded C</span><span>STM32</span><span>ASK</span>
+              <span>LSK</span><span>Inductive Coupling</span><span>IoT</span>
+            </div>
+            <div class="project-links">
+              <a href="#">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-visual">⚡</div>
+        </div>
+
+        <!-- Project 02 -->
+        <div class="project-card reveal visible" data-cat="iot" style="transition-delay:0.1s">
+          <div class="project-num">02</div>
+          <div class="project-card-header">
+            <div class="project-title">ESP32 IoT Weather Dashboard</div>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p class="project-desc">
+            Built an IoT-based environmental monitoring system using an ESP32 microcontroller to
+            capture temperature, humidity, and other parameters in real time. Data is transmitted
+            wirelessly via HTTP/MQTT protocols and visualised on a live ThingSpeak graphical
+            dashboard — creating a scalable foundation for smart-environment applications.
+          </p>
+          <div class="project-stack">
+            <span>ESP32</span><span>Embedded C</span><span>MQTT</span>
+            <span>HTTP</span><span>ThingSpeak</span>
+          </div>
+          <div class="project-links">
+            <a href="#">GitHub →</a>
+          </div>
+        </div>
+
+        <!-- Project 03 -->
+        <div class="project-card reveal visible" data-cat="backend" style="transition-delay:0.15s">
+          <div class="project-num">03</div>
+          <div class="project-card-header">
+            <div class="project-title">CLI Employee Management System</div>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p class="project-desc">
+            Developed a command-line application in Python that performs full CRUD operations
+            on employee records stored in a MySQL database. Features a clean schema design using
+            DDL/DML and connects via the MySQL Connector library — demonstrating solid backend
+            logic and a scalable architecture ready for expansion into a web-based application.
+          </p>
+          <div class="project-stack">
+            <span>Python</span><span>MySQL</span><span>SQL</span>
+            <span>MySQL Connector</span><span>CLI</span>
+          </div>
+          <div class="project-links">
+            <a href="#">GitHub →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Let's build something <em>great</em></h2>
+      <div class="contact-grid">
+        <div class="contact-form reveal">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" id="fname" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" id="femail" placeholder="you@example.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" id="fsubject" placeholder="Project enquiry, collaboration..." />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea id="fmessage" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <div class="form-submit">
+            <button class="btn btn-primary" id="sendBtn" onclick="sendMessage()">Send Message →</button>
+            <span style="font-size:11px;color:var(--muted)">I reply within 24hrs</span>
+          </div>
+        </div>
+        <div class="contact-info reveal" style="transition-delay:0.15s">
+          <p class="contact-intro">
+            Open to full-time roles, freelance projects, and interesting collaborations.
+            Let's talk about what you're building.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:alex@alexchen.dev" class="contact-link">
+              <span class="contact-link-icon">✉</span>
+              <div class="contact-link-text">
+                <div class="contact-link-label">Email</div>
+                <div class="contact-link-value">corneliujone2004@gmail.com</div>
+              </div>
+              <span class="contact-link-arrow">→</span>
+            </a>
+            <a href="https://github.com" class="contact-link">
+              <span class="contact-link-icon">◆</span>
+              <div class="contact-link-text">
+                <div class="contact-link-label">GitHub</div>
+                <div class="contact-link-value">github.com/corneliujonathan</div>
+              </div>
+              <span class="contact-link-arrow">→</span>
+            </a>
+            <a href="https://linkedin.com" class="contact-link">
+              <span class="contact-link-icon">◈</span>
+              <div class="contact-link-text">
+                <div class="contact-link-label">LinkedIn</div>
+                <div class="contact-link-value">linkedin.com/in/Corneliujonathan</div>
+              </div>
+              <span class="contact-link-arrow">→</span>
+            </a>
+            <a href="https://instagram.com" class="contact-link">
+              <span class="contact-link-icon">◇</span>
+              <div class="contact-link-text">
+                <div class="contact-link-label">Instagram / X</div>
+                <div class="contact-link-value">@corneliujonathan</div>
+              </div>
+              <span class="contact-link-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-text">
+        &copy; 2026 <span>Alex Chen</span> — Designed &amp; Built with ♥
+      </div>
+      <div class="footer-links">
+        <a href="#">Resume</a>
+        <a href="#">Privacy</a>
+        <a href="#hero">↑ Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript loaded at end of body -->
+  <script src="script.js"></script>
+
+</body>
+</html>
